@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ktor-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8084"  # Убедитесь, что сервер слушает на порту 8084
+    environment:
+      - SERVER_PORT=8084

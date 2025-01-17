@@ -1,0 +1,1 @@
+fun String.maskAsPassword(): String = "*".repeat(length)
