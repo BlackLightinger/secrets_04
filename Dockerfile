@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y wget unzip && \
 # Копируем gradle wrapper
 COPY gradle /gradle
 
+
 # Ожидаем, что jar файл будет собран на этапе локальной сборки
 # Просто запускаем сервер через команду `java -jar` или с помощью gradle
 CMD ["./gradlew", "run"]
